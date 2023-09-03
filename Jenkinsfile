@@ -1,12 +1,11 @@
 pipeline{
       agent{ docker {image 'ubuntu'}}
       stages{
-         stage{   
-             steps('build'){
-                   {
+         stage ('build') {   
+             steps{
                     sh 'git --version'
                    }
                }
             }
          } 
-      }
+      
