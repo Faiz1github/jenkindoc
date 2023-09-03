@@ -1,9 +1,9 @@
 pipeline{
-      agent{ docker {image 'ubuntu'}}
+      agent{ docker {image 'maven:3.9.4-eclipse-temurin-17-alpine'}}
       stages{
          stage ('build') {   
              steps{
-                    sh 'git --version'
+                    sh 'mvn --version'
                    }
                }
             }
