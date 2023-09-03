@@ -1,7 +1,7 @@
 pipeline{
       agent{ docker {image 'ubuntu'}}
       stages{
-        steps{'build'}
+        steps('build')
               {
                 sh 'git --version'
               }
